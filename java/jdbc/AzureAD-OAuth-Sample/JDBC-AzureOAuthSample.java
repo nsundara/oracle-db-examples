@@ -40,7 +40,7 @@ public class JDBCDBTokenSample {
   // Another way to enable token authentication in the long form connection string. 
   final static String DB_URL="jdbc:oracle:thin:@(description="
            + "(retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1521)(host=adb.us-phoenix-1.oraclecloud.com))"
-           + "(security=(token_auth=OCI_TOKEN))"
+           + "(security=(token_auth=OCI_TOKEN)(token_location=$HOME/.oracle/database/OAuth-token/token)"
            + "(connect_data=(service_name=gebqqeredfsozhjbqbs_dbname_medium.adb.oraclecloud.com)))";
 
 
