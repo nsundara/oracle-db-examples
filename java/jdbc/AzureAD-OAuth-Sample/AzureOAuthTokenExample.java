@@ -1,4 +1,4 @@
-/* Copyright (c) 2022, Oracle and/or its affiliates. All rights reserved.*/
+/* Copyright (c) 2023, Oracle and/or its affiliates. All rights reserved.*/
 /*
    DESCRIPTION
    This code example shows how to use JDBC and UCP's programmatic APIs for
@@ -38,7 +38,7 @@
     <dependency>
       <groupId>com.oracle.database.jdbc</groupId>
       <artifactId>ojdbc11-production</artifactId>
-      <version>21.6.0.0.1</version>
+      <version>21.8.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
@@ -52,7 +52,7 @@
    DATABASE_APP_ID_URI = URI of an Autonomous Database that is registered with Azure AD
 
    NOTES
-    Use JDK 8 or above
+    Use JDK 11 or above
    MODIFIED          (MM/DD/YY)
     Michael-A-McMahon 05/31/22 - Creation
  */
@@ -103,7 +103,7 @@ public class AzureTokenExample {
   private static final String DATABASE_URL =
     /*TODO: Set this to your database url*/
     //"jdbc:oracle:thin:@your_db_name_tp?TNS_ADMIN=/path/to/your/wallet";
-    "jdbc:oracle:thin:@test?TNS_ADMIN=/Users/michaelmcmahon/iam-auth/Wallet_oauth-db";
+    "jdbc:oracle:thin:@testdb_medium?TNS_ADMIN=/Users/testuser/Wallet_oauth-db";
 
   /**
    * The Application ID URI of an Oracle Database. This value can be obtained
@@ -112,7 +112,7 @@ public class AzureTokenExample {
   private static final String DATABASE_APP_ID_URI =
     /*TODO: Set this to your database Application ID URI*/
     //"https://<tenant-host>/<app-id>";
-    "https://oracledevelopment.onmicrosoft.com/3d3e9766-503d-4870-a821-b0544c4224e5";
+    "https://oracledevelopment.onmicrosoft.com/3d3f9845-503d-4870-a821-b0544c4224e5";
 
 
   // Print the configured values in this static block
