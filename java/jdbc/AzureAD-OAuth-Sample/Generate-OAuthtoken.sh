@@ -4,8 +4,8 @@
 # how to configure SQLcl to authenticate with that token.
 
 # Log in as a service principle
-# TODO: Oracle's proxy won't allow this request. So this needs to be run with VPN disabled.
-#az login --service-principal -u 544dc8bb-6b9f-4636-b20a-fb00927a2ce3 -p $HOME/iam-auth/azure-key-pair.pem --tenant 5b743bc7-c1e2-4d46-b4b5-a32eddac0286 --scope api://3d3e9766-503d-4870-a821-b0544c4224e5/.default --allow-no-subscriptions
+# TODO: Make sure to run with VPN disabled
+#az login --service-principal -u 544dc8bb-6b9f-4636-b20a-fb00927a2ce3 -p $HOME/iam-auth/azure-key-pair.pem --tenant 5b743bc7-c1d2-4d46-b4b5-a32eddac0286 --scope api://3d3e9766-523d-4870-a821-b0544c4224e5/.default --allow-no-subscriptions
 
 # Pre-requisites.
 # Make sure to follow these instructions before running the script. 
@@ -13,7 +13,7 @@
 #  	 (https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 # 2. Install SQLCl locall on your computer. 
 #    (https://www.oracle.com/database/sqldeveloper/technologies/sqlcl/)
-# 3. Make sure to use 21.6.0.0.1 or 19.15.0.0.1 JDBC driver.  
+# 3. Make sure to use 21.6.0.0.1 or later or 19.15.0.0.1 or later Oracle JDBC driver.  
 #    (https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
 #    Place this in "lib" folder of sqlcl. 
 # 4. Copy the following contents to a file and save it as "whoami.sql" 
