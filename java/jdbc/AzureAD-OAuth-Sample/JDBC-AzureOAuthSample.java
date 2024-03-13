@@ -34,7 +34,7 @@ public class JDBC-AzureOAuthSample {
   //If mutual TLS (mTLS) is enabled then, ADB connection requires wallets. 
   // Download the wallet zip file and provide the path to the zip file as TNS_ADMIN 
   // Note that you need to pass the property oracle.jdbc.tokenAuthentication=OAUTH for OAuth token authentication 
-  final static String DB_URL="jdbc:oracle:thin:@dbname_high?TNS_ADMIN=/Users/user/wallet/Wallet_dbname&oracle.jdbc.tokenAuthentication=OCI_TOKEN";
+  final static String DB_URL="jdbc:oracle:thin:@dbname_high?TNS_ADMIN=/Users/user/wallet/Wallet_dbname&oracle.jdbc.tokenAuthentication=OAUTH";
    
   // If mutual TLS(mTLS) is disabled then, ADB connection does not require wallets. 
   // Copy the connection string from "DB Connection" tab from "Connection Strings" section choosing "TLS" in the dropdown
