@@ -29,7 +29,7 @@ import oracle.jdbc.pool.OracleDataSource;
 import oracle.jdbc.OracleConnection;
 import java.sql.DatabaseMetaData;
 
-public class JDBC-AzureOAuthSample {  
+public class JDBCAzureOAuthSample {  
 
   //If mutual TLS (mTLS) is enabled then, ADB connection requires wallets. 
   // Download the wallet zip file and provide the path to the zip file as TNS_ADMIN 
