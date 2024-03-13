@@ -52,8 +52,8 @@ public class JDBC-AzureOAuthSample {
     // the OracleConnection interface. 
     Properties properties = new Properties();     
  
-   //Connection property to enable IAM token authentication.
-   // properties.put(OracleConnection.CONNECTION_PROPERTY_TOKEN_AUTHENTICATION, "OCI_TOKEN");
+   //Connection property to enable Azure AD OAuth token authentication.
+   //properties.put(OracleConnection.CONNECTION_PROPERTY_TOKEN_AUTHENTICATION, "OAUTH");
      
     OracleDataSource ods = new OracleDataSource();
     ods.setURL(DB_URL);    
