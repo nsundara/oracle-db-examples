@@ -112,7 +112,7 @@ public class AzureTokenExample {
   private static final String DATABASE_APP_ID_URI =
     /*TODO: Set this to your database Application ID URI*/
     //"https://<tenant-host>/<app-id>";
-    "https://oracledevelopment.onmicrosoft.com/3d3f9845-503d-4870-a821-b0544c4224e5";
+    "https://xxxxxdevelopment.onmicrosoft.com/3d4o2345-503d-4870-a821-b0544c4224e5";
 
 
   // Print the configured values in this static block
